@@ -7,6 +7,9 @@ body {
     /* font-weight: 500; */
     background-color: #F8F9FA;
     font-size: 14px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
