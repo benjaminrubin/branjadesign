@@ -1,0 +1,28 @@
+html,
+body {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    /* font-family: Source Sans Pro, sans-serif; */
+    /* font-weight: 500; */
+    background-color: #F8F9FA;
+    font-size: 14px;
+}
+
+* {
+    /* box-sizing: border-box; */
+}
+
+*:before,
+*:after {
+    /* box-sizing: border-box; */
+}
+
+footer {
+    font-size: .75rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
