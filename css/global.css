@@ -6,7 +6,7 @@ body {
     /* font-family: Source Sans Pro, sans-serif; */
     /* font-weight: 500; */
     background-color: #F8F9FA;
-    font-size: 14px;
+    font-size: 10px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,4 +28,11 @@ footer {
     width: 100%;
     text-align: center;
     padding-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+    html,
+    body {
+        font-size: 14px;
+    }
 }
