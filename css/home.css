@@ -19,6 +19,8 @@ h1 {
     letter-spacing: -1.17px;
     text-align: center;
     margin: 0;
+    position: relative;
+    top: .7rem;
 }
 
 h2 {
@@ -27,6 +29,7 @@ h2 {
     color: #373737;
     letter-spacing: -0.49px;
     text-align: center;
+    margin: 0;
 }
 
 header p {
@@ -40,7 +43,8 @@ header p {
 
 header hr {
     border: 2px solid #373737;
-    margin: 1rem 0;
+    border-radius: 17px 17px 17px 17px;
+    margin: .75rem 0;
 }
 
 header img {
