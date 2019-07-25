@@ -66,5 +66,7 @@ header img {
 }
 
 @media (min-width: 600px) {
-    top: 2.5rem;
+    header img {
+        top: 2.5rem;
+    }
 }
