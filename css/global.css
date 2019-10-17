@@ -12,6 +12,24 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Fade In Animation */
+
+body {
+    animation: fadeInAnimation ease 1.34s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 * {
     /* box-sizing: border-box; */
 }
