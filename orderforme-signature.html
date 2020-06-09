@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order For Me - Signature Generator</title>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron py-2">
+            <img src="img/orderforme/orderforme-logo.png" alt="Order For Me Logo"
+                class="img-fluid mx-auto col-6 d-block">
+            <h3 class="mb-3 text-center mb-4">Email Signature Generator</h3>
+            <p class="lead text-center"> Use this tool to create a nice looking e-mail signature and add it your Gmail!
+                This will help you stand out when communicating with people from outside of the company 😉</p>
+
+        </div>
+
+        <!-- <img src="img/orderforme/orderforme-logo.png" alt="Order For Me Logo" class="img-fluid mx-auto col-8 d-block">
+        <h1 class="mb-3 text-center mb-5">Email Signature Generator</h1>
+        <p class="col-sm-12 col-md-8 mx-auto">
+            Use this generator to create a great looking e-mail signature to add to your Gmail signature! This will help you stand out when communicating with people from outside of the company,
+            and help you look a little bit more official 😉
+        </p> -->
+
+        <div class="col-sm-12 col-md-8 mx-auto">
+
+            <form action="">
+
+                <!-- Step 1 -->
+                <div class="form-group">
+                    <label for="formGroupExampleInput" class="alert alert-primary"><span class="font-weight-bold underline">Step 1:</span> Type in
+                        your name and phone number</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                </div>
+                <div class="form-group mb-5">
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="8182323232">
+                </div>
+                
+
+                <!-- Step 2 -->
+                <div class="form-group mb-5">
+                    <label for="formGroupExampleInput" class="alert alert-primary"><span class="font-weight-bold underline">Step 2:</span> Select
+                        your job role from the drop down menu</label>
+                    <select id="inputState" class="form-control">
+                        <option selected disabled>Choose...</option>
+                        <option>Account Manager</option>
+                    </select>
+
+                </div>
+
+
+                <!-- Step 3 -->
+                <div class="form-group">
+                    <p class="alert alert-primary"> <span class="font-weight-bold underline">Step 3:</span> Copy your signature by clicking the
+                        button below
+                    </p>
+
+                    <div class="text-center mt-2">
+                        <button type="button" class="btn btn-outline-secondary">Copy Signature to Clipboard</button>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Signature Preview -->
+
+
+
+    <div class="container my-5">
+
+        <h5 class="text-center">Preview of your signature:</h5>
+        <div class="col-6 mx-auto border shadow p-5">
+
+            <div class="">
+                <table>
+                    <td style="padding: 0;">
+                        <img src="https://www.branja.co/img/orderforme-icon.png" alt="Order For Me Logo"
+                            style="height: 80px; width: 80px; padding-right: 5px;">
+                    </td>
+                    <td style="border-left: .5px solid #C5C5C5; padding-left: 10px;">
+                        <table>
+                            <tr>
+                                <td
+                                    style="padding-left: 5px; padding-bottom: 5px; padding-right: 0; padding-top: 0; font-size: 12px; font-family: sans-serif;">
+                                    <span style="font-weight: bold; font-size: 13px;"> Michael Jordan</span>
+                                    <br />
+                                    <span>Founder/CEO @ Order For Me</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px; padding: 0; font-family: sans-serif;">
+
+                                    <table style="font-size: 10px;">
+                                        <tr>
+                                            <td style="text-align: center; padding-right: 5px;">T</td>
+                                            <td><a href="tel:+18184892522"
+                                                    style="color: #1780F7; text-decoration: none;">+1
+                                                    (818) 489 2522</a></td>
+                                        </tr>
+                                        <!-- <tr>
+                                <td style="text-align: center; padding-right: 5px;">E</td>
+                                <td><a href="mailto:bennyfrubin@gmail.com" style="color: #1780F7; text-decoration: none;">bennyfrubin@gmail.com</a></td>
+                            </tr> -->
+                                        <tr>
+                                            <td style="text-align: center; padding-right: 5px;">W</td>
+                                            <td><a href="https://www.branja.co" target="_blank"
+                                                    style="color: #1780F7; text-decoration: none;">www.Branja.co</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+
+
+
+        <!-- Step 4 -->
+        <div class="col-sm-12 col-md-8 mx-auto mb-5">
+            <p class="alert alert-primary">
+                <span class="font-weight-bold underline">Step 4:</span> Paste your signature in Gmail!
+            </p>
+
+            <p class="font-italic"> Go to your Gmail, click on the cog wheel that is in the top right of your screen and go to "Settings"</p>
+            <img src="img/orderforme/settings.png" alt="" class="img-fluid d-block col-6 mx-auto mb-2 shadow-sm border">
+
+            <p class="font-italic">Under the "General" tab, scroll down until you reach the "Signature" section. Paste the copied signature into the box</p>
+            <img src="img/orderforme/signature.png" alt="" class="img-fluid d-block mx-auto mb-2 shadow-sm border">
+
+            <p class="font-italic">Scroll all the way down and tap "Save Changes"!</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
