@@ -37,6 +37,15 @@ formRole.change(function() {
 
 
 
+function copySignature() {
+
+    var signatureCode = document.getElementById("signature");
+
+
+    console.log("Signature Copied!")
+}
+
+
 function formatPhoneNumber(phoneNumberString) {
     var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
     var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
