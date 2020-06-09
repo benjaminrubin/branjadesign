@@ -23,7 +23,7 @@
         <div class="jumbotron py-2">
             <img src="img/orderforme/orderforme-logo.png" alt="Order For Me Logo"
                 class="img-fluid mx-auto col-6 d-block">
-            <h3 class="mb-3 text-center mb-4">Email Signature Generator</h3>
+            <h3 class="mb-3 text-center mb-4">Create an Email Signature</h3>
             <p class="lead text-center"> Use this tool to create a nice looking e-mail signature and add it your Gmail!
                 This will help you stand out when communicating with people from outside of the company 😉</p>
 
@@ -76,8 +76,13 @@
                     </p>
 
                     <div class="text-center mt-2">
-                        <button type="button" class="btn btn-outline-secondary" onclick="copySignature()">Copy Signature to Clipboard</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="copySignature()">Copy Signature
+                            to Clipboard</button>
                     </div>
+                    <div class="alert alert-success mt-3 col-md-12 col-lg-6 text-center mx-auto" role="alert" style="width: 190px; display: none;" id="alert-success" >
+                        Copied to clipboard!
+                      </div>
+
                 </div>
 
 
@@ -102,94 +107,102 @@
         <div class="col-8 mx-auto border shadow p-5">
 
             <div id="signature">
-                <table>
-                    <td style="padding: 0;">
-                        <img src="https://www.branja.co/img/orderforme/orderforme-email-2.jpg" alt="Order For Me Logo"
-                            style="height: 122px; width: 122px; padding-right: 5px;">
-                    </td>
-                    <td style="padding-left: 10px;">
-                        <table>
-                            <tr>
-                                <td
-                                    style="padding-bottom: 5px; padding-right: 0; padding-top: 0; font-size: 16px; font-family: sans-serif;">
-                                    <span style="font-weight: bold;" id="signatureName"> Michael Jordan</span>
-                                    <br />
-                                    <span id="signatureRole">Founder</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="font-size: 14px; padding: 0; font-family: sans-serif;">
-
-                                    <table style="font-size: 13px;">
-                                        <tr>
-                                            <td style="padding-bottom: 3px">
-                                                <a href="tel:+18184892522"
-                                                    style="color: #1780F7; text-decoration: none;">
-                                                    <img src="https://www.branja.co/img/orderforme/phone-icon.png"
-                                                        style="height:20px; width: 20px;">
-                                                    <span style="padding-left: 3px" id="signaturePhone">
-                                                        (516) 381-9742</span>
-                                                </a></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding-bottom: 3px">
-                                                <a id="signatureTarget" href="mailto:mjordan@orderto.me" target="_blank"
-                                                    style="color: #1780F7; text-decoration: none;" >
-                                                    <img src="https://www.branja.co/img/orderforme/email-icon.png"
-                                                        style="height:20px; width: 20px">
-                                                    <span style="padding-left: 3px" id="signatureEmail">
-                                                        mjordan@orderfor.me
-                                                    </span></a>
+                <table
+                    style="border-collapse: collapse; color: rgb(33, 37, 41); font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px;">
+                    <tbody style="box-sizing: border-box;">
+                        <tr style="box-sizing: border-box;">
+                            <td style="box-sizing: border-box; padding: 0px;"><img
+                                    src="https://www.branja.co/img/orderforme/orderforme-email-2.jpg"
+                                    alt="Order For Me Logo"
+                                    style="box-sizing: border-box; vertical-align: middle; border-style: none; height: 122px; width: 122px; padding-right: 5px;">
+                            </td>
+                            <td style="box-sizing: border-box; padding-left: 10px;">
+                                <table style="border-collapse: collapse;">
+                                    <tbody style="box-sizing: border-box;">
+                                        <tr style="box-sizing: border-box;">
+                                            <td
+                                                style="box-sizing: border-box; padding-bottom: 5px; padding-right: 0px; padding-top: 0px; font-family: sans-serif;">
+                                                <span id="signatureName"
+                                                    style="box-sizing: border-box; font-weight: bold;">Michael
+                                                    Jordan</span><br style="box-sizing: border-box;"><span
+                                                    id="signatureRole" style="box-sizing: border-box;">Founder</span>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding-bottom: 3px">
-                                                <a href="https://www.orderfor.me" target="_blank"
-                                                    style="color: #1780F7; text-decoration: none;">
-                                                    <img src="https://www.branja.co/img/orderforme/url-icon.png"
-                                                        style="height:20px; width: 20px">
-                                                    <span style="padding-left: 3px">
-                                                        www.OrderFor.Me
-                                                    </span>
-                                                </a>
+                                        <tr style="box-sizing: border-box;">
+                                            <td
+                                                style="box-sizing: border-box; font-size: 14px; padding: 0px; font-family: sans-serif;">
+                                                <table style="border-collapse: collapse; font-size: 13px;">
+                                                    <tbody style="box-sizing: border-box;">
+                                                        <tr style="box-sizing: border-box;">
+                                                            <td style="box-sizing: border-box; padding-bottom: 3px;"><a
+                                                                    id="signaturePhoneTarget" href=""
+                                                                    style="box-sizing: border-box; color: rgb(23, 128, 247); text-decoration-line: none; background-color: transparent;"><img
+                                                                        src="https://www.branja.co/img/orderforme/phone-icon.png"
+                                                                        style="box-sizing: border-box; vertical-align: middle; border-style: none; height: 20px; width: 20px;">&nbsp;<span
+                                                                        id="signaturePhone"
+                                                                        style="box-sizing: border-box; padding-left: 3px;">(516)
+                                                                        381-9742</span></a></td>
+                                                        </tr>
+                                                        <tr style="box-sizing: border-box;">
+                                                            <td style="box-sizing: border-box; padding-bottom: 3px;"><a
+                                                                    id="signatureTarget"
+                                                                    href="mailto:mjordan@orderto.me" target="_blank"
+                                                                    style="box-sizing: border-box; color: rgb(23, 128, 247); text-decoration-line: none; background-color: transparent;"><img
+                                                                        src="https://www.branja.co/img/orderforme/email-icon.png"
+                                                                        style="box-sizing: border-box; vertical-align: middle; border-style: none; height: 20px; width: 20px;">&nbsp;<span
+                                                                        id="signatureEmail"
+                                                                        style="box-sizing: border-box; padding-left: 3px;">mjordan@orderfor.me</span></a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr style="box-sizing: border-box;">
+                                                            <td style="box-sizing: border-box; padding-bottom: 3px;"><a
+                                                                    href="https://www.orderfor.me" target="_blank"
+                                                                    style="box-sizing: border-box; color: rgb(23, 128, 247); text-decoration-line: none; background-color: transparent;"><img
+                                                                        src="https://www.branja.co/img/orderforme/url-icon.png"
+                                                                        style="box-sizing: border-box; vertical-align: middle; border-style: none; height: 20px; width: 20px;">&nbsp;<span
+                                                                        style="box-sizing: border-box; padding-left: 3px;">www.OrderFor.Me</span></a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </td>
                                         </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
+
             </div>
         </div>
-    </div>
 
-    <div class="container">
+        <div class="container">
 
+            <!-- Step 4 -->
+            <div class="col-sm-12 col-md-8 mx-auto my-5">
+                <p class="alert alert-primary">
+                    <span class="font-weight-bold underline">Step 4:</span> Paste your signature in Gmail!
+                </p>
 
+                <p class="font-italic"> Go to your Gmail, click on the cog wheel that is in the top right of your screen
+                    and
+                    go to "Settings"</p>
+                <img src="img/orderforme/settings.png" alt=""
+                    class="img-fluid d-block col-6 mx-auto mb-2 shadow-sm border">
 
+                <p class="font-italic">Under the "General" tab, scroll down until you reach the "Signature" section.
+                    Paste
+                    the copied signature into the box (Mac: Command + V or Windows: Ctrl + V</p>
+                <img src="img/orderforme/signature.png" alt="" class="img-fluid d-block mx-auto mb-2 shadow-sm border">
 
+                <p class="font-italic">Scroll all the way down and tap "Save Changes".</p>
+            </div>
 
-        <!-- Step 4 -->
-        <div class="col-sm-12 col-md-8 mx-auto mb-5">
-            <p class="alert alert-primary">
-                <span class="font-weight-bold underline">Step 4:</span> Paste your signature in Gmail!
-            </p>
+            <h3 class="font-weight-bold text-center ">You're done!</h3>
+            <p class="mb-5 text-center">Your new stylized signature will now appear at the bottom of every email.</p>
 
-            <p class="font-italic"> Go to your Gmail, click on the cog wheel that is in the top right of your screen and
-                go to "Settings"</p>
-            <img src="img/orderforme/settings.png" alt="" class="img-fluid d-block col-6 mx-auto mb-2 shadow-sm border">
-
-            <p class="font-italic">Under the "General" tab, scroll down until you reach the "Signature" section. Paste
-                the copied signature into the box</p>
-            <img src="img/orderforme/signature.png" alt="" class="img-fluid d-block mx-auto mb-2 shadow-sm border">
-
-            <p class="font-italic">Scroll all the way down and tap "Save Changes".</p>
         </div>
-
-        <h3 class="font-weight-bold text-center mb-5">You're done!</h3>
-
-    </div>
 
 
 
@@ -197,15 +210,9 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <!-- Custom Javascript -->
 <script src="js/signature.js"></script>
